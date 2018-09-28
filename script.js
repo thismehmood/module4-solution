@@ -13,33 +13,12 @@ for(var name in ip){
    }
    
 }
-/* 	*/
-
+ 
+console.log("............................     ");
 (function (window) {
-	var helloSpeaker = {};
-	var Hello = "Hello";
-	helloSpeaker.speak = function (names) {
-  console.log(Hello + " " + names);
-}
-
-window.helloSpeaker = helloSpeaker;
-})(window);
-
-(function (window) {
-
-var speakWord = "Good Bye";
-var byeSpeaker = {};
-byeSpeaker.speak = function (names) {
-  console.log(speakWord + " " + names);
-}
-
-window.byeSpeaker = byeSpeaker;
-})(window);
-
-(function (window) {
-	var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-	for(var i = 0; i < names.length; i++){
-	  var firstLetter = names[i].charAt(0).toLowerCase();
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  for(var i = 0; i < names.length; i++){
+    var firstLetter = names[i].charAt(0).toLowerCase();
        if (firstLetter === 'j') {
         byeSpeaker.speak(names[i]);
   } else {
